@@ -28,9 +28,11 @@ export function Navbar() {
           {/* Logo */}
           <div className="flex items-center">
             <a href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-orange-500 to-pink-500 rounded-lg flex items-center justify-center shadow-md">
-                <span className="text-white">R</span>
-              </div>
+              <img
+                src="/ReorderX.svg"
+                alt="ReorderX Logo"
+                className="w-8 h-8"
+              />
               <span className="text-gray-900">ReorderX</span>
             </a>
           </div>

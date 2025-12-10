@@ -1,68 +1,29 @@
-<svg width="260" height="72" viewBox="0 0 260 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="260" height="72" fill="white"/>
+<svg width="120" height="120" viewBox="0 0 120 120"
+     fill="none" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Logo icon container -->
-  <g transform="translate(8,8)">
-    <!-- Gradient definition -->
-    <defs>
-      <linearGradient id="reorderxGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#2563EB"/>
-        <stop offset="1" stop-color="#22C55E"/>
-      </linearGradient>
-    </defs>
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="rxGrad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#22C55E"/>
+    </linearGradient>
+  </defs>
 
-    <!-- Rounded square icon -->
-    <rect x="0" y="0" width="56" height="56" rx="18" fill="url(#reorderxGradient)"/>
+  <!-- Rounded square background -->
+  <rect width="120" height="120" rx="28" fill="url(#rxGrad)"/>
 
-    <!-- Chat bubble inside -->
-    <g transform="translate(10,12)">
-      <!-- Main bubble -->
-      <rect x="0" y="0" width="32" height="22" rx="7" fill="white" fill-opacity="0.96"/>
+  <!-- Circular arrows forming subtle X / repeat symbol -->
+  <g transform="translate(24,24)">
+    <!-- Arrow circle path -->
+    <path d="M36 0A36 36 0 1 1 0 36" stroke="white" stroke-width="7.5" stroke-linecap="round" fill="none"/>
 
-      <!-- Bubble tail -->
-      <path d="M10 22 L14 22 L10 28 Z" fill="white" fill-opacity="0.96"/>
-
-      <!-- “Typing” dots -->
-      <circle cx="10" cy="10.5" r="1.7" fill="#2563EB"/>
-      <circle cx="16" cy="10.5" r="1.7" fill="#2563EB"/>
-      <circle cx="22" cy="10.5" r="1.7" fill="#2563EB"/>
-    </g>
-
-    <!-- Stylized "X" overlay (ReorderX) -->
-    <g transform="translate(26,26)" stroke="white" stroke-width="2.4" stroke-linecap="round">
-      <line x1="-6" y1="-6" x2="6" y2="6" />
-      <line x1="-6" y1="6" x2="6" y2="-6" />
-    </g>
+    <!-- Arrow heads -->
+    <path d="M32 4L36 0L40 4" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
+    <path d="M4 32L0 36L4 40" stroke="white" stroke-width="7.5" stroke-linecap="round"/>
   </g>
 
-  <!-- Wordmark -->
-  <g transform="translate(80,23)">
-    <!-- "Reorder" -->
-    <text x="0" y="18"
-          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif"
-          font-size="20"
-          font-weight="600"
-          fill="#0F172A">
-      Reorder
-    </text>
+  <!-- Small chat bubble center -->
+  <rect x="42" y="42" width="36" height="26" rx="8" fill="white"/>
+  <path d="M52 68L56 68L52 74Z" fill="white"/>
 
-    <!-- "X" accent -->
-    <text x="90" y="18"
-          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif"
-          font-size="20"
-          font-weight="700"
-          fill="#2563EB">
-      X
-    </text>
-
-    <!-- Tagline -->
-    <text x="0" y="38"
-          font-family="-apple-system, system-ui, BlinkMacSystemFont, 'SF Pro Text', 'Inter', sans-serif"
-          font-size="11"
-          font-weight="400"
-          fill="#6B7280">
-      WhatsApp-powered repeat orders for local businesses
-    </text>
-  </g>
 </svg>
